@@ -1,0 +1,366 @@
+/* -------------------------------- */
+/* Color ,font and varible details setup */
+/* -------------------------------- */
+
+:root {
+  --font-base: arial, sans-serif;
+  --c-primeryr: #ffffff;
+  --c-seecondery: #fbfcfe;
+  --c-test: #e2e3e5;
+  --c-dark: #3d3434;
+  --c-black: #000000;
+  --c-hover: rgb(236, 195, 15);
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* -------------------------------- */
+/* image overwrite css setup */
+
+.image-overlay-container {
+  position: relative; /* Required to position the overlay text */
+ 
+}
+
+.image-overlay-text {
+  position: absolute;
+  margin-top: -95px;
+  margin-left: 610px;
+  transform: translate(-50%, -50%); /* Center the text exactly */
+  color: white; /* Text color */
+  background-color: none; /* Semi-transparent background */
+  padding: 10px 20px; /* Padding for the text */
+  font-size: 1.5rem; /* Font size for the text */
+  text-align: center; /* Center the text within the overlay box */
+}
+
+.image-overlay-container img {
+  width: 100px; /* Make image responsive */
+  height: auto;
+}
+
+/* -------------------------------- */
+.fotter-home-size{
+
+  margin-left: -80px;
+  width: 1280px;
+  
+
+}
+/* -------------------------------- */
+/* Animation css setup */
+
+.carousel-caption h2 {
+  font-size: 3rem;
+  animation: fadeInDown 1.5s ease-in-out;
+}
+.carousel-caption p {
+  font-size: 1.5rem;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------------------- */
+
+
+ .carousel-item {
+  display: flex;
+}
+.carousel-item .card {
+  flex: 1;
+  margin: 0 10px;
+} 
+
+
+
+
+/* -------------------------------- */
+/* navi bar css setup */
+
+.navi-title {
+  background-color: var(--c-dark);
+}
+.link-title {
+  text-decoration: none;
+  color: var(--c-primeryr);
+}
+
+.link-title:hover {
+  color: var(--c-hover);
+}
+
+.navi-background {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg-light ul li a:hover {
+  color: var(--c-hover);
+}
+.customize-c-text {
+  margin-bottom: 150px;
+  margin-right: 300px;
+}
+.customize-c-text-center {
+  margin-bottom: 150px;
+  margin-left: 300px;
+}
+.c-poster {
+  display: block;
+
+  object-fit: cover;
+}
+
+/* -------------------------------- */
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption-p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  
+  
+}
+.p-title{
+  position: absolute;
+  top: 20px;
+  left: 370px;
+  color: rgb(238, 125, 33);
+}
+
+.carousel-image-p {
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.text-carousel {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  
+}
+
+/* Custom buttons */
+.carousel-control-prev-p, .carousel-control-next-p {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-p {
+  left: 10px;
+}
+
+.carousel-control-next-p {
+  right: 10px;
+}
+
+/* -------------------------------- */
+/* hero section css setup */
+
+/* -------------------------------- */
+
+/* instructor-details */
+
+.instructor-box{
+    
+  margin: 100px 0 0 50px;
+  
+  display: grid;
+  grid-template-columns: repeat(3,400px);
+
+  
+  
+}
+.instructor-details img{
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 1s;
+     
+}
+
+.instructor-details .img1{
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.instructor-details{
+  position: relative;
+  overflow: hidden;
+}
+
+.content-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  
+  
+}
+.content-img h3{
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  margin-top: 2px;
+}
+
+.content-img span{
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 2px;
+}
+
+
+.content-img p{
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+ 
+}
+.instructor-details .content-img a{
+  font-size: 1rem;
+  position: absolute;
+  font-weight: bold;
+  
+}
+/* .instructor-details .content-img a:hover{
+  color: rgb(44, 44, 44);
+  background-color: blanchedalmond;
+  font-weight: bold;
+} */
+
+
+
+.content-img{
+  width: 300px;
+  height: 405px;
+  background-color: rgba(112, 111, 111, 0.267);
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: 1.5s;
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  
+ 
+}
+
+.instructor-details:hover .content-img{
+  transform: translateY(50%);
+  cursor: pointer;
+
+}
+
+.instructor-details:hover img{
+  transform: scale(1.2);
+ 
+}
+
+.footer-size{
+ width: 1280px;
+ margin-left: -80px;
+ 
+ 
+}
+
+.location{
+
+  display: grid;
+  width: 1280px;
+ margin-left: -80px;
+  
+}
+
+.active-color{
+  color: var(--c-hover);
+}
+
+/* about page start*/
+
+.img-readus{
+  border-radius: 50%;
+}
+
+
+/* about page end*/
+
+/* Search page start */
+.search-margin{
+  
+  padding-bottom: 400px;
+  padding-left: 400px;
+  margin-top: 100px;
+}
+/* Search page end */
+
+
+/* login css Start*/
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  }
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+
+/* login css End*/
+
